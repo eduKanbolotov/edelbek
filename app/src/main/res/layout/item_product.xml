@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="26dp"
+        >
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#3D7AE4">
+
+
+            <ImageView
+                android:id="@+id/tovar_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/topp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/tovar_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="цена"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="70dp"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tovar_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Название продукта"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/tovar_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Марка продукта"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/tovar_favorite_check"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src ="@drawable/ic_baseline_check_circle_outline_24"
+            android:visibility= "invisible"
+            android:layout_gravity ="center"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
